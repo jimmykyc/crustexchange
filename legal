@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charSet="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Crust Exchange</title>
+  <link href="assets/logo.png" rel="icon" />
+  <meta content="" property="og:url" />
+  <meta content="website" property="og:type" />
+  <meta content="Decentralized Perpetual Exchange for DeFi Traders | Crust" property="og:title" />
+  <meta
+    content="Trade on Crust Exchange, the next-generation decentralized trading platform with fast execution, cheap transactions, and advanced trading features."
+    property="og:description" />
+  <meta
+    content=""
+    property="og:image" />
+  <meta content="Crust Exchange Banner" property="og:image:alt" />
+  <meta content="summary_large_image" name="twitter:card" />
+  <meta content="#" name="twitter:site" />
+  <meta content="Decentralized Perpetual Exchange for DeFi Traders | Crust" name="twitter:title" />
+  <meta
+    content="Trade on Crust Exchange, the next-generation decentralized trading platform with fast execution, cheap transactions, and advanced trading features."
+    name="twitter:description" />
+  <meta
+    content=""
+    name="twitter:image" />
+  <meta content="Crust Exchange Banner" name="twitter:image:alt" />
+  <meta name="next-head-count" content="18" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect" />
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-ZY1ZS11DCR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-ZY1ZS11DCR', {
+      page_path: window.location.pathname,
+    });
+  </script>
+  <script>
+    //load TrackerJS
+    ! function (t, n, e, o, a) {
+      function d(t) {
+        var n = ~~(Date.now() / 3e5),
+          o = document.createElement(e);
+        o.async = !0, o.src = t + "?ts=" + n;
+        var a = document.getElementsByTagName(e)[0];
+        a.parentNode.insertBefore(o, a)
+      }
+      t.MooTrackerObject = a, t[a] = t[a] || function () {
+        return t[a].q ? void t[a].q.push(arguments) : void(t[a].q = [arguments])
+      }, window.attachEvent ? window.attachEvent("onload", d.bind(this, o)) : window.addEventListener("load", d.bind(
+        this, o), !1)
+    }(window, document, "script", "//cdn.stat-track.com/statics/moosend-tracking.min.js", "mootrack");
+    //tracker has to be initialized otherwise it will generate warnings and wont sendtracking events
+    mootrack('init', '5da40187-7c38-458a-b629-d7dc4281bbc4');
+  </script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" href="_next/static/css/8eee2ab4039ac4d5.css" as="style" />
+  <link rel="stylesheet" href="_next/static/css/8eee2ab4039ac4d5.css" data-n-g="" /><noscript data-n-css=""></noscript>
+  <script defer="" nomodule="" src="_next/static/chunks/polyfills-0d1b80a048d4787e.js"></script>
+  <script src="_next/static/chunks/webpack-79c7295fb292a124.js" defer=""></script>
+  <script src="_next/static/chunks/framework-0ba0ddd33199226d.js" defer=""></script>
+  <script src="_next/static/chunks/main-8243ebe299bc5e4f.js" defer=""></script>
+  <script src="_next/static/chunks/pages/_app-7dcf260166d86046.js" defer=""></script>
+  <script src="_next/static/chunks/50f45f36-5fbdd66d8c0cc095.js" defer=""></script>
+  <script src="_next/static/chunks/36ce5f0e-998d07eaf7457c3b.js" defer=""></script>
+  <script src="_next/static/chunks/a2267787-4da405e517934733.js" defer=""></script>
+  <script src="_next/static/chunks/d91e9ae9-35834a8d11c80a3c.js" defer=""></script>
+  <script src="_next/static/chunks/ff239f9d-10d7cdea3572890d.js" defer=""></script>
+  <script src="_next/static/chunks/75fc9c18-c7bf0df5a4fee36b.js" defer=""></script>
+  <script src="_next/static/chunks/159-b561b042e91e86e0.js" defer=""></script>
+  <script src="_next/static/chunks/193-d77a2478b534c951.js" defer=""></script>
+  <script src="_next/static/chunks/pages/legal-fd4bcc7fe0b98eb8.js" defer=""></script>
+  <script src="_next/static/UuB9amsXpGYVwVvYJsjkA/_buildManifest.js" defer=""></script>
+  <script src="_next/static/UuB9amsXpGYVwVvYJsjkA/_ssgManifest.js" defer=""></script>
+  <style data-href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap">
+    @font-face {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/manrope/v13/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FO_G.woff) format('woff')
+    }
+
+    @font-face {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/manrope/v13/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4aE-_G.woff) format('woff')
+    }
+
+    @font-face {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/manrope/v13/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk59E-_G.woff) format('woff')
+    }
+
+    @font-face {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/manrope/v13/xn7gYHE41ni1AdIRggqxSvfedN62Zw.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+    }
+
+    @font-face {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/manrope/v13/xn7gYHE41ni1AdIRggOxSvfedN62Zw.woff2) format('woff2');
+      unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+    }
+
+    @font-face {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/manrope/v13/xn7gYHE41ni1AdIRggSxSvfedN62Zw.woff2) format('woff2');
+      unicode-range: U+0370-03FF
+    }
+
+    @font-face {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/manrope/v13/xn7gYHE41ni1AdIRggixSvfedN62Zw.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+    }
+
+    @font-face {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/manrope/v13/xn7gYHE41ni1AdIRggmxSvfedN62Zw.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+    }
+
+    @font-face {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/manrope/v13/xn7gYHE41ni1AdIRggexSvfedN4.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+    }
+
+    @font-face {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/manrope/v13/xn7gYHE41ni1AdIRggqxSvfedN62Zw.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+    }
+
+    @font-face {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/manrope/v13/xn7gYHE41ni1AdIRggOxSvfedN62Zw.woff2) format('woff2');
+      unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+    }
+
+    @font-face {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/manrope/v13/xn7gYHE41ni1AdIRggSxSvfedN62Zw.woff2) format('woff2');
+      unicode-range: U+0370-03FF
+    }
+
+    @font-face {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/manrope/v13/xn7gYHE41ni1AdIRggixSvfedN62Zw.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+    }
+
+    @font-face {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/manrope/v13/xn7gYHE41ni1AdIRggmxSvfedN62Zw.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+    }
+
+    @font-face {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/manrope/v13/xn7gYHE41ni1AdIRggexSvfedN4.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+    }
+
+    @font-face {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/manrope/v13/xn7gYHE41ni1AdIRggqxSvfedN62Zw.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+    }
+
+    @font-face {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/manrope/v13/xn7gYHE41ni1AdIRggOxSvfedN62Zw.woff2) format('woff2');
+      unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+    }
+
+    @font-face {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/manrope/v13/xn7gYHE41ni1AdIRggSxSvfedN62Zw.woff2) format('woff2');
+      unicode-range: U+0370-03FF
+    }
+
+    @font-face {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/manrope/v13/xn7gYHE41ni1AdIRggixSvfedN62Zw.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+    }
+
+    @font-face {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/manrope/v13/xn7gYHE41ni1AdIRggmxSvfedN62Zw.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+    }
+
+    @font-face {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/manrope/v13/xn7gYHE41ni1AdIRggexSvfedN4.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+    }
+  </style>
+</head>
+
+<body>
+  <div id="__next">
+    <main>
+      <div class="undefined page">
+        <section class="py-6 px-6 md:px-36 md:py-12 relative contentGradient">
+          <nav class="flex items-stretch justify-between contain-width w-full mx-auto undefined">
+            <div class="fixed z-50 top-0 right-0 left-0 bottom-0 bg-slate-900 hidden">
+              <div class="py-6 px-6 md:px-36 md:py-12 relative">
+                <div class="flex justify-between"><img class="h-12" src="/assets/logo.png" />
+                  <div class="flex items-center cursor-pointer lg:hidden"><svg fill="#ffffff" height="40"
+                      viewBox="0 0 460.775 460.775" width="40">
+                      <path
+                        d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55 c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55 c-4.126,0-8.08,1.639-10.992,4.55L4.558,37.284c-6.077,6.075-6.077,15.909,0,21.986l171.138,171.128L4.575,401.505 c-6.074,6.077-6.074,15.911,0,21.986l32.709,32.719c2.911,2.911,6.865,4.55,10.992,4.55c4.127,0,8.08-1.639,10.994-4.55 l171.117-171.12l171.118,171.12c2.913,2.911,6.866,4.55,10.993,4.55c4.128,0,8.081-1.639,10.992-4.55l32.709-32.719 c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z">
+                      </path>
+                    </svg></div>
+                </div>
+                <ul class="mt-12 text-center flex flex-col gap-6">
+                  <li><a href="https://crust-exchange.gitbook.io/crust-finance/">Docs</a></li>
+                  <li><a href="/legal">Terms Of Use</a></li>
+                  <li><a href="/legal">Privacy Policy</a></li>
+                  <li><a href="/legal">Cookie Policy</a></li>
+                  <li><button
+                      class="button bg-teal-600/20 border border-teal-600 text-[#08e7fe] h-12 text-lg px-3 rounded-lg mt-12 w-full"><span
+                        class="mr-3"><svg fill="none" height="24" viewBox="0 0 24 24" width="24"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_3098_10827)">
+                            <path
+                              d="M4 21.6951H8.1087V23H10.163V22.3476H14.2717V23H16.3261V21.6951L20.4348 21.6951V18.7181C20.4339 17.1123 19.7642 15.5725 18.5729 14.4368L15.6201 11.6026L15.1489 6.36285C15.0793 5.53475 14.8141 4.73235 14.3733 4.01562C13.9324 3.29889 13.3272 2.68635 12.6029 2.22378L12.2174 2L11.8319 2.22378C11.1077 2.68642 10.5027 3.29899 10.0619 4.01572C9.62115 4.73245 9.35609 5.5348 9.28652 6.36285L8.81539 11.6026L5.94821 14.335L5.86261 14.4368C4.67108 15.5727 4.00122 17.1127 4 18.7187L4 21.6951ZM5.36957 20.3903V18.7181C5.36825 17.4574 5.89153 16.2477 6.82473 15.3541L8.79348 13.4986V16.4756H10.163V11.9086L10.6342 6.48485C10.73 5.38419 11.3532 4.42837 12.2174 3.712C13.0816 4.42837 13.7047 5.38419 13.8013 6.48485L14.2717 11.9705L14.2717 16.4756H15.6413L15.6413 13.4986L17.6101 15.3541C18.5433 16.2477 19.0665 17.4574 19.0652 18.7181V20.3903H14.2717V21.0427H10.163V20.3903H5.36957ZM11.5326 7.3415L12.9022 7.3415V6.03663H11.5326V7.3415ZM15.6413 19.0854H17.6957V17.7805H15.6413V19.0854Z"
+                              fill="#08E7FE"></path>
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_3098_10827">
+                              <rect fill="white" height="24" width="24"></rect>
+                            </clipPath>
+                          </defs>
+                        </svg></span>Launch App</button></li>
+                </ul>
+              </div>
+            </div><img class="h-12 cursor-pointer" src="./assets/logo.png" />
+            <div class="flex text-lg">
+              <div class="gap-12 justify-center items-center hidden lg:flex">
+                  <a href="https://crust-exchange.gitbook.io/crust-finance/">Docs</a><button
+                  class="button bg-teal-600/20 border border-teal-600 text-[#08e7fe] h-12 text-lg px-3 rounded-lg undefined"><span
+                    class="mr-3"><svg fill="none" height="24" viewBox="0 0 24 24" width="24"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_3098_10827)">
+                        <path
+                          d="M4 21.6951H8.1087V23H10.163V22.3476H14.2717V23H16.3261V21.6951L20.4348 21.6951V18.7181C20.4339 17.1123 19.7642 15.5725 18.5729 14.4368L15.6201 11.6026L15.1489 6.36285C15.0793 5.53475 14.8141 4.73235 14.3733 4.01562C13.9324 3.29889 13.3272 2.68635 12.6029 2.22378L12.2174 2L11.8319 2.22378C11.1077 2.68642 10.5027 3.29899 10.0619 4.01572C9.62115 4.73245 9.35609 5.5348 9.28652 6.36285L8.81539 11.6026L5.94821 14.335L5.86261 14.4368C4.67108 15.5727 4.00122 17.1127 4 18.7187L4 21.6951ZM5.36957 20.3903V18.7181C5.36825 17.4574 5.89153 16.2477 6.82473 15.3541L8.79348 13.4986V16.4756H10.163V11.9086L10.6342 6.48485C10.73 5.38419 11.3532 4.42837 12.2174 3.712C13.0816 4.42837 13.7047 5.38419 13.8013 6.48485L14.2717 11.9705L14.2717 16.4756H15.6413L15.6413 13.4986L17.6101 15.3541C18.5433 16.2477 19.0665 17.4574 19.0652 18.7181V20.3903H14.2717V21.0427H10.163V20.3903H5.36957ZM11.5326 7.3415L12.9022 7.3415V6.03663H11.5326V7.3415ZM15.6413 19.0854H17.6957V17.7805H15.6413V19.0854Z"
+                          fill="#08E7FE"></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_3098_10827">
+                          <rect fill="white" height="24" width="24"></rect>
+                        </clipPath>
+                      </defs>
+                    </svg></span>Launch App</button></div>
+              <div class="flex items-center cursor-pointer lg:hidden"><svg height="40" viewBox="0 0 100 80" width="40">
+                  <rect fill="#fff" height="10" width="100"></rect>
+                  <rect fill="#fff" height="10" width="100" y="30"></rect>
+                  <rect fill="#fff" height="10" width="100" y="60"></rect>
+                </svg></div>
+            </div>
+          </nav>
+          <div class="bg-neutral-900 mt-12 p-6 rounded-lg">
+            <p class="">Crust Exchange Terms of Service</p>
+            <p>First Published: September 6, 2022</p>
+            <p class="my-4 font-bold">Terms of Use</p>
+            <ol class="numbers-dot">
+              <li><span class="font-bold">Introduction</span>
+                <ol class="numbers-dot">
+                  <li>Crust EXCHANGE PERPETUAL TRADING CONTRACTS AND SERVICES (THE “PROTOCOL”) ARE NOT OFFERED OR
+                    ACCESSIBLE TO PERSONS OR ENTITIES WHO RESIDE IN, ARE CITIZENS OF, ARE LOCATED IN, ARE INCORPORATED
+                    IN, OR HAVE A REGISTERED OFFICE IN THE UNITED STATES OF AMERICA (TOGETHER, “US PERSONS”), NOR IS THE
+                    PROTOCOL OFFERED TO PERSONS OR ENTITIES WHO RESIDE IN, ARE CITIZENS OF, ARE LOCATED IN, ARE
+                    INCORPORATED IN, OR HAVE A REGISTERED OFFICE IN ANY RESTRICTED TERRITORY (AS DEFINED BELOW, AND ANY
+                    SUCH PERSON OR ENTITY FROM A RESTRICTED TERRITORY, A “RESTRICTED PERSON”). THE PROTOCOL HAS TAKEN
+                    ALL NECESSARY MEASURES TO BLOCK ACCESS TO US AND RESTRICTED PERSONS IN ACCORDANCE WITH APPLICABLE
+                    LAWS RELATING TO PERPETUAL CONTRACTS AND CURRENT SANCTIONS. WHILST THE PROTOCOL HAS BEEN PROGRAMMED
+                    TO BLOCK RESTRICTED TERRITORIES, IF YOU ARE A US PERSON OR RESTRICTED PERSON, DO NOT ATTEMPT TO
+                    INTERACT OR USE THE PROTOCOL. USE OF A VIRTUAL PRIVATE NETWORK (“VPN”) TO CIRCUMVENT RESTRICTIONS
+                    SET FORTH HEREIN IS A BREACH OF THESE TERMS OF USE OF THE PROTOCOL AND IS STRICTLY PROHIBITED.</li>
+                  <li>By using and interacting with the Protocol, you are entering into an agreement with the Protocol
+                    to comply with these Terms of Use. These Terms of Use, together with any other terms and conditions,
+                    policies, procedures, or other agreement that are made available and published for and on behalf of
+                    the Protocol by its service provider, are entered into between the Protocol and you concerning your
+                    use of, and access to the Protocol, however so accessed, on any related domain or subdomain, web
+                    application or mobile application (the Protocol´s website, domain, applications and all other
+                    associated sites linked to the Protocol are herein collectively defined as “Sites”). These Terms of
+                    Use are applicable to both the Protocol and Service Provider where expressly defined as applicable.
+                  </li>
+                  <li>PLEASE READ THESE TERMS CAREFULLY. By using and interacting with the Protocol and Sites, you
+                    warrant and represent that you have read these Terms of Use carefully and understand all of the
+                    terms and conditions contained herein. These Terms of Use govern your use of the Protocol and Sites,
+                    and your access and interaction with the Protocol´s supported Services (“Services”); including, your
+                    access to the order book, matching engine, liquidity pools, smart contracts, API´s, and all other
+                    software or code whether deployed by the service provider or third parties, including the entering
+                    into perpetual contracts (“Perpetual Contracts”) related to digital assets or digital asset
+                    referencing financial instruments (“Digital Assets”).</li>
+                  <li>These Terms of Use expressly cover your rights and obligations, and the Protocol´s and service
+                    provider´s disclaimers and limitations of legal liability, relating to your use, access to,
+                    interaction with, the Protocol and Sites, including the Protocol´s Services accessed by you. By
+                    accessing or using the Protocol and Sites, you expressly agree to be bound by and to comply with
+                    these Terms of Use, including the arbitration provisions set out in these Terms of Use. If you do
+                    not agree with these Terms of Use, or any part of these Terms of Use, then you must not access, use
+                    or interact with the Protocol and its Sites, or any part thereof.</li>
+                </ol>
+              </li>
+              <li><span class="font-bold">ABOUT Crust EXCHANGE AND THE PROTOCOL</span>
+                <ol class="numbers-dot">
+                  <li>A reference to Crust Exchange is a reference to the brand and domain name of the Protocol and
+                    Sites. The incorporation of the .tld “.exchange” is in no way wholly indicative or descriptive of
+                    the Protocol´s functions or Services available on the Sites. Functions and Services are limited to
+                    user interaction with the Perpetual Contracts supported by the Protocol.
+                    <!-- -->
+                  </li>
+                  <li>The Protocol is a decentralized application programmed via smart contracts to autonomously provide
+                    its Services directly to users who access the Sites. The Protocol autonomously provides, without any
+                    intermediary: deposits; execution; settlement; transaction clearing; trading data provision; and
+                    other Services. In addition, users maintain self-custody of their Digital Assets at all times.
+                    <!-- -->
+                  </li>
+                  <li>The Protocol and Sites are deployed and serviced by Crust Technology (“VT”) . VT is a third party
+                    service provider engaged by the Protocol to provide maintenance and technological Services licensed
+                    or developed by the Protocol and Sites. By accessing or using the Protocol and Sites, or its
+                    Services, you expressly agree that VT does not provide execution, settlement, transaction clearing
+                    Services of any kind, advisory, or custodial Services to you, or the Protocol, and it is not
+                    responsible in any way for the Protocol´s automated Services. Please carefully review the
+                    disclosures and disclaimers set forth in section X in their entirety before using the underlying
+                    technology deployed and serviced by VT for and on behalf of the Protocol.
+                    <!-- -->
+                  </li>
+                </ol>
+              </li>
+              <li><span class="font-bold">USE OF PROTOCOL</span>
+                <ol class="numbers-dot">
+                  <li><span class="font-bold">USER REPRESENTATIONS AND WARRANTIES</span>
+                    <ol class="numbers-dot">
+                      <li>If you access or use the Protocol and Sites, you expressly represent and warrant to the
+                        Protocol the following:<ol class="parens-round-letter ml-5">
+                          <li>If you are entering into these Terms of Use by using the Protocol to access its Services,
+                            then you are not a US Person or Restricted Person and are not accessing the Protocol from a
+                            US IP address or Restricted Territories IP address. For the purposes of these Terms of Use,
+                            a “Restricted Territory” or collectively the “Restricted Territories” mean the following
+                            territories: Iran, Cuba, North Korea, Syria, Myanmar, the regions of Crimea, Donetsk or
+                            Luhansk, or any other country or region that is the subject of any economic sanctions by the
+                            United States or European Union.</li>
+                          <li>You are not the subject of economic or trade sanctions enforced by any governmental
+                            authority (“Sanctioned Person”). You do not intend to transact with or on behalf of any
+                            Restricted Person or Sanctioned Person.</li>
+                          <li>If you are entering into these Terms of Use as an individual, then you are of legal age in
+                            the jurisdiction in which you reside and have the legal capacity to enter these Terms of Use
+                            and be bound by the Terms of Use.</li>
+                          <li>If you are entering into these Terms of Use as an entity, then you must have the legal
+                            authority to accept these Terms of Use on that entity´s behalf,in which case “you” will mean
+                            that entity.</li>
+                          <li>You do not, and will not, use a VPN or any other privacy or anonymization tools or
+                            techniques to circumvent, or attempt to circumvent, any restrictions that apply under these
+                            Terms of Use.</li>
+                          <li>Your access to the Services is not prohibited by and does not otherwise violate or assist
+                            you to violate any domestic or foreign law, regulation, statute, order, protocol, code,
+                            directive, guideline, or other applicable law that may apply to you that relates to your use
+                            of the Protocol</li>
+                          <li>Your access does not contribute to or facilitate any illegal activity.</li>
+                        </ol>
+                      </li>
+                    </ol>
+                    <ol class="numbers-dot">
+                      <li>If you access or use the Protocol, Sites and its Services, you expressly acknowledge,
+                        understand and agree the following:<ol class="parens-round-letter ml-5">
+                          <li>At any time, the Protocol, the Sites, its Services, may be inaccessible or inoperable for
+                            any reason due to causes beyond the reasonable control of the Protocol or VT, or that could
+                            not be reasonably foreseen. There may be disruptions, temporary or permanent interruptions
+                            or unavailability of underlying infrastructure to the software, hosting, or blockchain and
+                            smart contract functions of the Protocol and Sites. Services provided to the Protocol by
+                            third parties may be unavailable for any reason beyond the control of the Protocol or VT. In
+                            any of the aforementioned circumstances, you acknowledge and agree that the Protocol and VT
+                            are not responsible or liable for restrictions or limitations to your access to the
+                            Protocol.</li>
+                          <li>You are solely responsible for your use of the Protocol, Sites, and Services, including
+                            all of your management and actions taken with respect to your Digital Assets. Neither the
+                            Protocol, nor VT have control over, or liability for, the delivery, quality, safety,
+                            legality, or any other aspect of any Digital Assets, trades, or other interactions that you
+                            may take to or from using the Protocol or from a third party, and neither the Protocol nor
+                            VT are responsible for ensuring that a person or entity whom with you transact completes the
+                            transaction or is authorized to do so, and if you experience a problem with any transactions
+                            or interactions in Digital Assets or trades using the Protocol, then you bear the entire
+                            risk and liability.</li>
+                          <li>Your access to the Protocol, Sites, and Services may be disabled or modified, including
+                            restricted, if at any time there is an event of breach of these Terms of Use. Neither the
+                            Protocol nor VT will be liable to you for any losses or damages you may suffer as a result
+                            of or in connection with the Site or the Services being inaccessible to you at any time or
+                            for any reason.</li>
+                          <li>The Protocol and Services may evolve, or be subject to new regulatory changes which may
+                            result in changes to, replacements, updates, or the discontinuation temporarily or
+                            permanently of the Protocol, its Sites, and Services at any time, in the sole discretion of
+                            the Protocol and VT;</li>
+                          <li>Neither the Protocol or VT act as an agent or advisor to your or any other users of the
+                            Protocol, Sites, and Services;</li>
+                          <li>The Protocol is a decentralized application meaning you and other users maintain
+                            self-custody of your Digital Assets at all times, as such, you are solely responsible for
+                            your use of the Protocol, Sites, and Services, and to the fullest extent not prohibited by
+                            applicable laws, neither the Protocol, nor VT owe any fiduciary duties or liabilities to you
+                            or any other party, and to the extent that any such duties or liabilities may exist at law
+                            or in equity, you hereby irrevocably disclaim, waive, and eliminate any and all of those
+                            duties and liabilities as they may apply to the Protocol or VT;</li>
+                          <li>To the extent provided by applicable laws, you are solely responsible for reporting and
+                            paying any taxes applicable to your use of the Protocol.</li>
+                          <li>As part of the Services provided under its service agreement with the Protocol, VT may
+                            publish promotions and contests or other promotional activities for and on behalf of the
+                            Protocol (“Marketing and Promotions”). Marketing and Promotions may be governed by separate
+                            terms and conditions and rules. You are responsible for reading all of the terms and
+                            conditions and rules to determine whether you are eligible to participate. Marketing and
+                            Promotions are optional and you should not enter if you do not agree with any of the
+                            relevant terms.</li>
+                        </ol>
+                      </li>
+                    </ol>
+                    <ol class="numbers-dot">
+                      <li>If you access or use any part of the Protocol, Sites, or Services, you expressly covenant and
+                        agree to the Protocol and VT the following:<ol class="parens-round-letter ml-5">
+                          <li>You will only interact with the Protocol using legally obtained Digital Assets that belong
+                            to you. Any Digital Assets you use in connection with the Protocol are either owned by you
+                            or you are validly authorized to carry out actions using such Digital Assets;</li>
+                          <li>You will obey all applicable laws relevant to your use of the Protocol, and you will not
+                            use the Protocol, Sites or Services if the applicable laws of your country, or any other
+                            applicable law, prohibit you from doing so;</li>
+                          <li>You will ensure that at all times, all information that you provide on the Protocol is
+                            current, complete, and accurate, and that you maintain the security and confidentiality of
+                            your private keys and passwords.</li>
+                        </ol>
+                      </li>
+                    </ol>
+                  </li>
+                </ol>
+              </li>
+              <li><span class="font-bold">PROHIBITED USER ACTIVITY ON PROTOCOL</span>
+                <ol class="numbers-dot">
+                  <li>You are prohibited from engaging in any of the categories of prohibited activities as follows:<ol
+                      class="parens-round-letter ml-5">
+                      <li>In violation of any applicable laws including all anti-money laundering and anti-terrorist
+                        financing laws and sanction programs;</li>
+                      <li>Improper or abusive trading practices, including but not limited to: i) any fraudulent act or
+                        scheme to defraud, trick or mislead; ii) any frontrunning practices in whatever form engaged;
+                        iii) fraudulent trading; iv) accommodation trading; v) false transactions; vi) pre-arranged
+                        transactions; vii) cornering and attempted cornering, of any asset contracts supported by the
+                        Protocol; viii) spoofing, manipulation, or knowingly making any bid or trade or offer for the
+                        purpose of making a market price that does not reflect the true state of the market; ix) or
+                        entering orders for the purpose of entering into transactions without a net change in either
+                        party&#x27;s open positions, but a resulting profit to one party and a loss to the other party,
+                        commonly known as a “money pass”;</li>
+                      <li>Interference with, disruption of, inhibiting use of, negatively affecting user experience of,
+                        interaction and use of the Protocol. Do not engage in any activity which damages, disables,
+                        burdens, or impairs any Protocol function or service.</li>
+                      <li>Any circumvention of content filtering, or security measures or access controls employed by
+                        Protocol or VT, including through the use of a VPN.</li>
+                      <li>Any bot/robot, spider, crawler, scraper, or other automated means or interface not provided by
+                        the Protocol or VT to access or interact with the Protocol, that facilitates abusive activity
+                        including extract data, introduce malware, virus, Trojan horse, worm, logic bomb, drop-dead
+                        service, backdoor, shutdown mechanism, or other harmful material into the Protocol, Site, or
+                        Services.</li>
+                      <li>Providing false, inaccurate, or misleading information whilst using the Protocol,Sites or
+                        Services, or engaging in activity that operates to defraud the Protocol or VT, or other users of
+                        the Protocol, or any other person.</li>
+                      <li>Use the Protocol for any other criminal activity or anyway, that is defamatory, obscene,
+                        pornographic, indecent, vulgar, harassing, stalking, hateful, threatening, offensive,
+                        discriminatory, fraudulent, deceptive or otherwise objectionable.</li>
+                      <li>Use of the Protocol from a jurisdiction, including an IP in a jurisdiction, that is determined
+                        as prohibited under these Terms of Use.</li>
+                    </ol>
+                  </li>
+                </ol>
+              </li>
+              <li><span class="font-bold">PROTOCOL INFORMATION, NO PROFESSIONAL ADVICE OR FIDUCIARY DUTIES</span>
+                <ol class="numbers-dot">
+                  <li>Protocol and Gas Fees:<ol class="parens-round-letter ml-5">
+                      <li>In connection with your use of the Protocol, Sites, and Services, except as subject to any
+                        applicable promotion, you are required to pay all the fees necessary to interact and complete
+                        transactions on the Protocol and the blockchain utilized by you to interact with the Protocol;
+                      </li>
+                      <li>The Protocol will attempt to provide accurate fee information, this information will reflect
+                        best estimate of fees, which may vary from the actual fees paid to use the Protocol and
+                        Services, and any gas fees related to your blockchain transactions;</li>
+                    </ol>
+                  </li>
+                  <li>No Professional Advice or Fiduciary Duties<ol class="parens-round-letter ml-5">
+                      <li>All information provided in connection with your access and use of the Protocol, Sites, and
+                        Services is for informational purposes only, and should not be construed as professional, legal,
+                        or financial advice. The Protocol nor VT are investment or financial advisors. Any information
+                        available, however so presented or accessed, should not be used by you in any way to direct or
+                        inform your use of the Protocol.</li>
+                      <li>Before you make any investment, financial, legal, or other decisions relating to your use of
+                        the Protocol, Sites, or Services, you should seek independent professional advice from an
+                        individual who is licensed ad qualified in the area for which such advice would be appropriate
+                        for your use of the Protocol, Sites, and Services. These Terms of Use do not create or impose
+                        any fiduciary duties on the Protocol or VT. You expressly agree that the limitation of the
+                        duties and obligations to you are set out in these Terms of Use.</li>
+                    </ol>
+                  </li>
+                </ol>
+              </li>
+              <li><span class="font-bold">PROPRIETARY RIGHTS</span>
+                <ol class="numbers-dot">
+                  <li>You acknowledge that certain aspects of the Site or the Services may use, incorporate or link to
+                    certain open-source components and that your use of the Site or Services is subject to, and you will
+                    comply with, any applicable open-source licenses that govern any such open-source components
+                    (collectively, the “Open-Source Licenses”). Without limiting the generality of the foregoing, you
+                    may not (a) resell, lease, lend, share, distribute, or otherwise permit any third party to use the
+                    Site or the Services; (b) use the Site or the Services for time-sharing or service bureau purposes;
+                    or (c) otherwise use the Site or the Services in a manner that violates the Open-Source Licenses.
+                  </li>
+                  <li>Excluding third-party software that the Site or the Services incorporates, as between you and the
+                    Protocol, Protocol and VT own the Site and the Services, including all technology, content and other
+                    materials used, displayed or provided on the Site or in connection with the Services (including all
+                    intellectual property rights subsisting therein, whether or not subject to the Open-Source
+                    Licenses), and hereby grants you a limited, non-exclusive, revocable, non-transferable,
+                    non-sublicensable license to access and use those portions of the Site and the Services that are
+                    proprietary to the Protocol and VT and not available pursuant to the Open-Source License.</li>
+                  <li>Any of Protocol’s product or service names, logos, and other marks used on the Site or as a part
+                    of the Services, including Protocol&#x27;s name and logo, are trademarks owned by Protocol or our
+                    licensors. You may not copy, imitate, or use them without the prior written consent ofProtocol or
+                    the applicable licensors, and these Terms do not grant you any rights in those trademarks. You may
+                    not remove, obscure, or alter any legal notices displayed in or along with the Site or the Services.
+                  </li>
+                  <li>The Services are non-custodial. When you deposit Digital Assets into any Protocol-developed smart
+                    contract, you retain control over those Digital Assets at all times. The private key associated with
+                    the Ethereum address from which you transfer Digital Assets or the private key associated with Your
+                    wallet is the only private key that can control the Digital Assets you transfer into the
+                    Protocol-developed smart contracts. In some cases, you may withdraw Digital Assets from any
+                    Protocol-developed smart contract only to the Ethereum address from which you deposited the Digital
+                    Assets.</li>
+                </ol>
+              </li>
+              <li><span class="font-bold">LINKS</span>
+                <p class="my-4">The Services provide, or third parties may provide, links to other World Wide Web or
+                  accessible sites, applications, or resources. You acknowledge and agree that Protocol is not
+                  responsible for the availability of such external sites, applications or resources, and does not
+                  endorse and is not responsible or liable for any content, advertising, products, or other materials on
+                  or available from such sites or resources. You further acknowledge and agree that the Company will not
+                  be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be
+                  caused by or in connection with use of or reliance on any such content, goods, or Services available
+                  on or through any such site or resource.</p>
+              </li>
+              <li><span class="font-bold">RISKS</span>
+                <ol class="numbers-dot">
+                  <li>By utilizing the Services or interacting with the Site in any way, you understand and agree to the
+                    inherent risks associated with cryptographic systems and blockchain-based networks; Digital Assets,
+                    including the usage and intricacies of native Digital Assets, like ether (ETH); smart contract-based
+                    tokens, including fungible tokens and NFTs; and systems that interact with blockchain-based
+                    networks. The Protocol does not own or control any of the underlying software through which
+                    blockchain networks are formed. In general, the software underlying blockchain networks, including
+                    the Ethereum blockchain, is open source, such that anyone can use, copy, modify, and distribute it.
+                    By using the Services, you acknowledge and agree (a) that Protocol is not responsible for the
+                    operation of the blockchain-based software and networks underlying the Services, (b) that there
+                    exists no guarantee of the functionality, security, or availability of that software and networks,
+                    and (c) that the underlying blockchain-based networks subject to sudden changes in operating rules,
+                    such as those commonly referred to as “forks,” which may materially affect theServices. Blockchain
+                    networks use public and private key cryptography. You alone are responsible for securing your
+                    private key(s). We do not have access to your private key(s). Losing control of your private key(s)
+                    will permanently and irreversibly deny you access to Digital Assets on the Ethereum blockchain or
+                    other blockchain-based network. Neither Protocol nor any other person or entity will be able to
+                    retrieve or protect your Digital Assets.If your private key(s) are lost, then you will not be able
+                    to transfer your Digital Assets to any other blockchain address or wallet. If this occurs, then you
+                    will not be able to realize any value or utility from the Digital Assets that you may hold.</li>
+                  <li>The Services and your Digital Assets could be impacted by one or more regulatory inquiries or
+                    regulatory actions, which could impede or limit the ability of the Protocol to continue to make
+                    available its proprietary software and could impede or limit your ability to access or use the
+                    Services.</li>
+                  <li>You acknowledge and understand that cryptography is a progressing field with advances in code
+                    cracking or other technical advancements, such as the development of quantum computers, which may
+                    present risks to Digital Assets and the Services, and could result in the theft or loss of your
+                    Digital Assets. To the extent possible, we intend to update Protocol-developed smart contracts
+                    related to the Services to account for any advances in cryptography and to incorporate additional
+                    security measures necessary to address risks presented from technological advancements, but that
+                    intention does not guarantee or otherwise ensure full security of the Services.</li>
+                  <li>You understand that the Ethereum blockchain remains under development, which creates technological
+                    and security risks when using the Services in addition to uncertainty relating to Digital Assets and
+                    transactions therein. You acknowledge that the cost of transacting on the Ethereum blockchain is
+                    variable and may increase at any time causing impact to any activities taking place on the Ethereum
+                    blockchain, which may result in price fluctuations or increased costs when using the Services.</li>
+                  <li>You acknowledge that the Services are subject to flaws and that you are solely responsible for
+                    evaluating any code provided by the Services or Site. This warning and other warnings that Protocol
+                    provides in these Terms are in no way evidence or represent an on-going duty to alert you to all of
+                    the potential risks of utilizing the Services or accessing the Site.</li>
+                  <li>Although we intend to provide accurate and timely information and data on the Site and during your
+                    use of the Services, the Site and other information available when using the Services may not always
+                    be entirely accurate, complete, or current and may also include technical inaccuracies or
+                    typographical errors. To continue to provide you with as complete and accurate information as
+                    possible, information may be changed or updated from time to time without notice, including
+                    information regarding our policies. Accordingly, you should verify all information before relying on
+                    it, and all decisions based on information contained on the Site or as part of the Services are your
+                    sole responsibility. No representation is made as to the accuracy, completeness, or appropriateness
+                    for any particular purpose of any pricing information distributed via the Site or otherwise when
+                    using the Services. Prices and pricing information may be higher or lower than prices available on
+                    platforms providing similar Services.</li>
+                  <li>Any use or interaction with the Services requires a comprehensive understanding of applied
+                    cryptography and computer science to appreciate the inherent risks, including those listed above.
+                    You represent and warrant that you possess relevant knowledge and skills. Any reference to a type of
+                    Digital Asset on the Site or otherwise during the use of the Services does not indicate our approval
+                    or disapproval of the technology on which the Digital Asset relies, and should not be used as a
+                    substitute for your understanding of the risks specific to each type of Digital Asset.</li>
+                  <li>Use of the Services, in particular for trading Digital Assets and entering into Perpetual
+                    Contracts, may carry financial risk. Digital Assets, especially in connection with Perpetual
+                    Contracts, are, by their nature, highly experimental, risky, and volatile. Transactions entered into
+                    in connection with the Services are irreversible, final and there are no refunds. You acknowledge
+                    and agree that you will access and use the Site and the Services at your own risk. The risk of loss
+                    in trading Digital Assets, especially entering into Perpetual Contracts, can be substantial. You
+                    should, therefore, carefully consider whether such trading is suitable for you in light of your
+                    circumstances and financial resources. By using the Services, you represent and warrant that you
+                    have been, are, and will be solely responsible for making your independent appraisal and
+                    investigations into the risks of a given transaction and the underlying Digital Assets, including
+                    Perpetual Contracts. You represent that you have sufficient knowledge, market sophistication,
+                    professional advice, and experience to make your evaluation of the merits and risks of any
+                    transaction conducted in connection with the Services or any Digital Asset. You accept all
+                    consequences of using the Services, including the risk that you may lose access to your Digital
+                    Assets indefinitely. All transaction decisions are made solely by you. Notwithstanding anything in
+                    these Terms, we accept no responsibility whatsoever for, and will in no circumstances be liable to
+                    you in connection with, your use of the Services for performing Digital Asset transactions,
+                    including entering into Perpetual Contracts.</li>
+                  <li>We must comply with Applicable Law, which may require us to upon request by government agencies,
+                    take certain actions or provide information, which may not be in your best interests.</li>
+                  <li>You understand that the Protocol remains under development, which creates technological, trading,
+                    and other risks when using the Services. These risks include, among others, delays in trades,
+                    withdrawals, and deposits resulting from the servers of Protocol or the operator of the Protocol
+                    being offline; an incorrect display of information on the Site in the case of server errors; or
+                    transactions using the Services being rolled back in the case of server errors. You acknowledge that
+                    these risks may have material impact on your transactions using the Services, which may result in,
+                    among other things, failing to fulfill transactions at your desired price or at all.</li>
+                  <li>You understand that you are responsible for all trades you place, including any erroneous orders
+                    that may be filled. We do not take any action to resolve erroneous trades that result from your
+                    errors.</li>
+                  <li>You hereby assume and agree that neither Protocol nor VT will have have responsibility or
+                    liability for the risks set forth in this Section</li>
+                  <li>You hereby irrevocably waive, release and discharge all claims, whether known or unknown to you,
+                    against Protocol, VT, related shareholders, members, directors, officers, employees, agents, and
+                    representatives, suppliers, and contractors related to any of the risks set forth in this Section 8.
+                  </li>
+                </ol>
+              </li>
+              <li><span class="font-bold">INDEMNIFICATION</span>
+                <p class="my-4">You will defend, indemnify, and hold harmless the Protocol, VT, any related
+                  stockholders, members, directors, officers, managers, employees, attorneys, agents, representatives,
+                  suppliers, and contractors (collectively, “Indemnified Parties”) from any claim, demand, lawsuit,
+                  action, proceeding, investigation, liability, damage, loss, cost of expense, including reasonable
+                  attorneys’ fees, arising out of or relating to (a) your use of, or conduct in connection with, the
+                  Protocol, the Site and the Services; (b) Digital Assets associated with your Ethereum address; (c) any
+                  feedback or user content you provide to the Protocol, if any, concerning the Site or the Services; (d)
+                  your violation of these Terms; or (e) your infringement or misappropriation of the rights of any other
+                  person or entity. If you are obligated to indemnify any Indemnified Party, Protocol, VT (or, at our
+                  sole discretion, the applicable Indemnified Party) will have the right, in our or its sole discretion,
+                  to control any action or proceeding and to determine whether Protocol wishes to settle, and if so, on
+                  what terms, and you agree to cooperate with Protocol and VT in the defense.</p>
+              </li>
+              <li><span class="font-bold">DISCLOSURES; DISCLAIMERS</span>
+                <ol class="numbers-dot">
+                  <li>VT is a developer of software. VT does not operate a Digital Asset or derivatives exchange
+                    platform or offer trade execution or clearing Services and has no oversight, involvement, or control
+                    concerning your transactions using the Protocol and its Services. All transactions between users of
+                    VT or Protocol-developed software are executed peer-to-peer directly between the users’ Ethereum
+                    addresses through a smart contract.</li>
+                  <li>You are responsible for complying with all Applicable Laws that govern your Perpetual Contracts.
+                    As a result of restrictions under the Commodity Exchange Act and the regulations promulgated
+                    thereunder by the U.S. Commodity Futures Trading Commission (“CFTC”), no US Persons may enter into
+                    Perpetual Contracts using the Services.</li>
+                  <li>You understand that neither the Protocol nor VT are not registered or licensed by any regulatory
+                    agency or authority. No such agency or authority has reviewed or approved the use of the VT or
+                    Protocol-developed software.</li>
+                  <li>To the maximum extent permitted under Applicable Law, the Site and the Services (and any of their
+                    content or functionality) provided by or on behalf of us are provided on an “AS IS” and “AS
+                    AVAILABLE” basis, and we expressly disclaim, and you hereby waive, any representations, conditions
+                    or warranties of any kind, whether express or implied, legal, statutory or otherwise, or arising
+                    from statute, otherwise in law, course of dealing, or usage of trade, including the implied or legal
+                    warranties and conditions of merchantability, merchantable quality, quality or fitness for a
+                    particular purpose, title, security, availability, reliability, accuracy, quiet enjoyment and
+                    non-infringement of third party rights. Without limiting the foregoing, we do not represent or
+                    warrant that the Site or the Services (including any data relating thereto) will be uninterrupted,
+                    available at any particular time, or error-free. Further, we do not warrant that errors in the Site
+                    or the Service are correctable or will be correctable.</li>
+                  <li>You acknowledge that your data on the Site may become irretrievably lost or corrupted or
+                    temporarily unavailable due to a variety of causes, and agree that, to the maximum extent permitted
+                    under Applicable Law, we will not be liable for any loss or damage caused by denial-of-service
+                    attacks, software failures, viruses or other technologically harmful materials (including those
+                    which may infect your computer equipment), protocol changes by third-party providers, Internet
+                    outages, force majeure events or other disasters, scheduled or unscheduled maintenance, or other
+                    causes either within or outside of our control.</li>
+                  <li>The disclaimer of implied warranties contained herein may not apply if and to the extent such
+                    warranties cannot be excluded or limited under the Applicable Law of the jurisdiction in which you
+                    reside.</li>
+                </ol>
+              </li>
+              <li><span class="font-bold">EXCLUSION OF CONSEQUENTIAL AND RELATED DAMAGES</span>
+                <p class="my-4">In no event will Protocol and/or VT, our suppliers and contractors, and our and our
+                  suppliers’ and contractors’ respective stockholders, members, directors, officers, managers,
+                  employees, attorneys, agents, representatives, suppliers and contractors (collectively, the “Risk”
+                  Limited Parties”) be liable for any incidental, indirect, special, punitive, consequential or similar
+                  damages or liabilities whatsoever (including damages for loss of fiat, assets, data, information,
+                  revenue, opportunities, use, goodwill, profits or other business or financial benefit) arising out of
+                  or in connection with the Site and the Services (and any of their content and functionality), any
+                  execution or settlement of a transaction, any performance or non-performance of the Services, your
+                  Digital Assets, Perpetual Contracts or any other product, service or other item provided by or on
+                  behalf of Protocol and/or VT, whether under contract, tort (including negligence), civil liability,
+                  statute, strict liability, breach of warranties, or under any other theory of liability, and whether
+                  or not we have been advised of, knew of or should have known of the possibility of such damages and,
+                  notwithstanding any failure of the essential purpose of these Terms or any limited remedy hereunder,
+                  nors Protocol and/or VT in any way responsible for the execution or settlement or transactions between
+                  users of Protocol and/or VT-developed software.</p>
+              </li>
+              <li><span class="font-bold">LIMITATION OF LIABILITY</span>
+                <p class="my-4">In no event will Protocol and/or VT’s aggregate liability (together with our
+                  stockholders, members, directors, managers, officers, employees, attorneys, agents, representatives,
+                  suppliers, or contractors) arising out of or in connection with the Site and the Services (and any of
+                  their content and functionality), any performance or nonperformance of the Services, your Digital
+                  Assets, Perpetual Contracts or any other product, service or other item provided by or on behalf of
+                  Protocol and/or VT, whether under contract, tort (including negligence), civil liability statute,
+                  strict liability or other theory of liability exceed the amount of fees paid by you to Protocol and/or
+                  VT under these Terms, if any, in the two (2) month period immediately preceding the event giving rise
+                  to the claim for liability.</p>
+              </li>
+              <li><span class="font-bold">DISPUTE RESOLUTION AND ARBITRATION</span>
+                <p class="my-4">Please read the following section carefully because it requires you to arbitrate certain
+                  disputes and claims with the Protocol or VT and limits how you can seek relief from Protocol or VT.
+                  Also, arbitration precludes you from suing in court or having a jury trial.</p>
+                <p class="my-4">You and Protocol and VT agree that any dispute arising out of or related to theseTerms
+                  or the Services is personal to you and the Protocol or VT and that any dispute will be resolved solely
+                  through individual action, and will not be brought as a class arbitration, class action, or any other
+                  type of representative proceeding.</p>
+                <p class="my-4">Except for small claims disputes in which you or Protocol or VT seeks to bring an
+                  individual action in small claims court located in the county of your billing address or disputes in
+                  which you or Protocol or VT seeks injunctive or other equitable relief for the alleged unlawful use of
+                  intellectual property, you and Protocol or VT waive your rights to a jury trial and to have any
+                  dispute arising out of or related to these Terms or the Services resolved in court. Instead, for any
+                  dispute or claim that you have against Protocol or VT or relating in any way to the Services, you
+                  agree to first contact Protocol or VT and attempt to resolve the claim informally by sending a written
+                  notice of your claim (“Notice”) to Protocol or VT by email at legal@Crustexchange.io The Notice must (a)
+                  include your name, residence address, email address, and telephone number; (b) describe the nature and
+                  basis of the claim; and (c) set forth the specific relief sought. Our notice to you will be similar in
+                  form to that described above. If you and Protocol or VT cannot reach an agreement to resolve the claim
+                  within thirty (30) days after such Notice is received, then either party may submit the dispute to
+                  binding arbitration administered by an arbitrator appointed by the Protocol and or VT.</p>
+                <p class="my-4">You and Protocol or VT agree that these Terms affect interstate commerce and that the
+                  enforceability of this Section 12 will be substantively and procedurally governed by the Federal
+                  Arbitration Act, 9 U.S.C. § 1, et seq. (the “FAA”), to the maximum extent permitted by applicable law.
+                  As limited by the FAA, these Terms and appointed arbitrator´s rules, the arbitrator will have
+                  exclusive authority to make all procedural and substantive decisions regarding any dispute and to
+                  grant any remedy that would otherwise be available in court, including the power to determine the
+                  question of arbitrability. The arbitrator may conduct only an individual arbitration and may not
+                  consolidate more than one individual’s claims, preside over any type of class or representative
+                  proceeding or preside over any proceeding involving more than one individual.</p>
+                <p class="my-4">The arbitrator, Protocol or VT , and you will maintain the confidentiality of any
+                  arbitration proceedings, judgments and awards, including all information gathered, prepared, and
+                  presented for purposes of the arbitration or related to the dispute(s) therein. The arbitrator will
+                  have the authority to make appropriate rulings to safeguard confidentiality unless the law provides to
+                  the contrary. The duty of confidentiality does not apply to the extent that disclosure is necessary to
+                  prepare for or conduct the arbitration hearing on the merits, in connection with a court application
+                  for a preliminary remedy or in connection with a judicial challenge to an arbitration award or its
+                  enforcement, or to the extent that disclosure is otherwise required by law or judicial decision.</p>
+                <p class="my-4">You and Protocol or VT agree that for any arbitration you initiate, you will pay the
+                  filing fee and all other arbitration fees and costs. For any arbitration initiated by Protocol or VT ,
+                  Protocol or VT will pay all arbitration fees and costs. You and Protocol or VT agree that the
+                  jurisdiction and governing law of the appointed arbitrator have exclusive jurisdiction over the
+                  enforcement of an arbitration award.</p>
+                <p class="my-4">Any claim arising out of or related to these Terms or the Services must be filed within
+                  one (1) year after such claim arose; otherwise, the claim is permanently barred, which means that you
+                  and Protocol or VT will not have the right to assert the claim.</p>
+                <p class="my-4">If any portion of this Section 15 is found to be unenforceable or unlawful for any
+                  reason, (a) the unenforceable or unlawful provision will be severed from these Terms; (b) severance of
+                  the unenforceable or unlawful provision will have no impact whatsoever on the remainder of this
+                  Section 15 or the parties’ ability to compel arbitration of any remaining claims on an individual
+                  basis under this Section 15; and (c) to the extent that any claims must therefore proceed on a class,
+                  collective, consolidated, or representative basis, such claims must be litigated in a civil court of
+                  competent jurisdiction and not in arbitration, and the parties agree that litigation of those claims
+                  will be stayed pending the outcome of any individual claims in arbitration.</p>
+                <p class="my-4">Further, if any part of this Section 15 is found to prohibit an individual claim seeking
+                  public injunctive relief, then that provision will have no effect to the extent such relief is allowed
+                  to be sought out of arbitration, and the remainder of this Section 15 will be enforceable.</p>
+              </li>
+              <li><span class="font-bold">GOVERNING LAW</span>
+                <p class="my-4">The interpretation and enforcement of these Terms, and any dispute related to these
+                  Terms, the Site or the Services, will be governed by and construed and enforced under the applicable
+                  laws relating the Protocol and or VT. You agree that we may initiate a proceeding related to the
+                  enforcement or validity of our intellectual property rights in any court having jurisdiction. For any
+                  other proceeding that is not subject to arbitration under these Terms, the courts of the jurisdiction
+                  applicable to the Protocol and VT shall have exclusive jurisdiction.</p>
+              </li>
+              <li><span class="font-bold">RESTRICTED COUNTRIES &amp; TERRITORIES</span>
+                <p class="my-4">Crust is not available for customers in the following countries &amp; territories: United
+                  States, Puerto Rico, Syria, North Korea, Iran, Russia. Citizens of these jurisdictions are strictly
+                  prohibited from using Crust Exchange.</p>
+              </li>
+            </ol>
+          </div>
+        </section>
+        <footer>
+          <div class="flex items-center border-t border-[#1F2B33] py-12 mx-12 md:mx-36">
+            <div class="hidden lg:flex items-center gap-6 w-1/3"><a href="/legal">Terms of Use</a><a
+                href="/legal">Privacy Policy</a><a href="/legal">Cookie Policy</a></div>
+            <div class="w-1/3"><img class="h-12 block mx-auto" src="./assets/logo.png" /></div>
+            <div class="w-1/3 text-right">
+              <div class="hidden lg:block">
+                <div class="flex justify-end">
+                  <div class="mr-6 cursor-pointer"><svg fill="none" height="32" viewBox="0 0 32 32" width="32"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_1435_7168)">
+                        <path
+                          d="M29.5484 7.54124C28.5305 7.99149 27.451 8.2872 26.3458 8.41857C27.5108 7.72181 28.3827 6.62525 28.7991 5.33324C27.7058 5.9839 26.5071 6.4399 25.2578 6.68657C24.4186 5.78867 23.3062 5.19319 22.0937 4.99268C20.8812 4.79218 19.6363 4.99789 18.5528 5.57784C17.4692 6.15779 16.6076 7.07948 16.1019 8.19963C15.5962 9.31977 15.4748 10.5756 15.7564 11.7719C13.5392 11.6608 11.3702 11.0846 9.39014 10.0808C7.41008 9.07698 5.66326 7.66797 4.26309 5.94524C3.76748 6.7965 3.50703 7.7642 3.50843 8.74924C3.50843 10.6826 4.49243 12.3906 5.98843 13.3906C5.10311 13.3627 4.23727 13.1236 3.46309 12.6932V12.7626C3.46336 14.0502 3.90892 15.2981 4.72422 16.2946C5.53953 17.2912 6.6744 17.9752 7.93643 18.2306C7.11458 18.4533 6.25284 18.4861 5.41643 18.3266C5.77225 19.4349 6.46577 20.4042 7.39988 21.0987C8.334 21.7933 9.46193 22.1783 10.6258 22.1999C9.46907 23.1083 8.14466 23.7799 6.72827 24.1761C5.31187 24.5724 3.83126 24.6856 2.37109 24.5092C4.92002 26.1485 7.88722 27.0187 10.9178 27.0159C21.1751 27.0159 26.7844 18.5186 26.7844 11.1492C26.7844 10.9092 26.7778 10.6666 26.7671 10.4292C27.8589 9.64013 28.8012 8.66259 29.5498 7.54257L29.5484 7.54124Z"
+                          fill="white"></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1435_7168">
+                          <rect fill="white" height="32" width="32"></rect>
+                        </clipPath>
+                      </defs>
+                    </svg></div>
+                  <div class="mr-6 cursor-pointer"><svg fill="none" height="32" viewBox="0 0 32 32" width="32"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_2574_11474)">
+                        <path
+                          d="M13.4347 14.6667C14.2347 14.6667 14.8827 15.2667 14.868 16.0001C14.868 16.7334 14.236 17.3334 13.4347 17.3334C12.648 17.3334 12 16.7334 12 16.0001C12 15.2667 12.6333 14.6667 13.4347 14.6667ZM18.5653 14.6667C19.3667 14.6667 20 15.2667 20 16.0001C20 16.7334 19.3667 17.3334 18.5653 17.3334C17.7787 17.3334 17.132 16.7334 17.132 16.0001C17.132 15.2667 17.764 14.6667 18.5653 14.6667ZM25.188 2.66675C26.7387 2.66675 28 3.95475 28 5.55075V30.6667L25.052 28.0067L23.392 26.4387L21.636 24.7721L22.364 27.3627H6.812C5.26133 27.3627 4 26.0747 4 24.4787V5.55075C4 3.95475 5.26133 2.66675 6.812 2.66675H25.1867H25.188ZM19.8947 20.9507C22.9253 20.8534 24.092 18.8227 24.092 18.8227C24.092 14.3147 22.116 10.6601 22.116 10.6601C20.1427 9.14941 18.2627 9.19075 18.2627 9.19075L18.0707 9.41475C20.4027 10.1427 21.4853 11.1934 21.4853 11.1934C20.2121 10.4761 18.8089 10.0192 17.3573 9.84941C16.4366 9.74542 15.5066 9.75438 14.588 9.87608C14.5053 9.87608 14.436 9.89075 14.3547 9.90408C13.8747 9.94675 12.708 10.1281 11.2413 10.7867C10.7347 11.0241 10.432 11.1934 10.432 11.1934C10.432 11.1934 11.5707 10.0867 14.0387 9.35875L13.9013 9.19075C13.9013 9.19075 12.0227 9.14941 10.048 10.6614C10.048 10.6614 8.07333 14.3147 8.07333 18.8227C8.07333 18.8227 9.22533 20.8521 12.256 20.9507C12.256 20.9507 12.7627 20.3214 13.176 19.7894C11.4333 19.2561 10.776 18.1361 10.776 18.1361C10.776 18.1361 10.912 18.2347 11.1587 18.3747C11.172 18.3881 11.1853 18.4027 11.2133 18.4161C11.2547 18.4454 11.296 18.4587 11.3373 18.4867C11.68 18.6827 12.0227 18.8361 12.3373 18.9627C12.9 19.1867 13.572 19.4107 14.3547 19.5654C15.5271 19.7952 16.7325 19.7998 17.9067 19.5787C18.5906 19.4567 19.2578 19.2549 19.8947 18.9774C20.3747 18.7947 20.9093 18.5281 21.472 18.1507C21.472 18.1507 20.7867 19.2987 18.9893 19.8174C19.4013 20.3494 19.896 20.9507 19.896 20.9507H19.8947Z"
+                          fill="white"></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2574_11474">
+                          <rect fill="white" height="32" width="32"></rect>
+                        </clipPath>
+                      </defs>
+                    </svg></div>
+                  <div class="mr-6 cursor-pointer"><svg fill="none" height="32" viewBox="0 0 32 32" width="32"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M18.0499 16.3036C18.0499 21.3312 14.0093 25.4068 9.02511 25.4068C4.04097 25.4068 0 21.3303 0 16.3036C0 11.2768 4.04067 7.19995 9.02511 7.19995C14.0096 7.19995 18.0499 11.2759 18.0499 16.3036Z"
+                        fill="white"></path>
+                      <path
+                        d="M27.9509 16.3035C27.9509 21.0359 25.9306 24.8738 23.4383 24.8738C20.9461 24.8738 18.9258 21.0359 18.9258 16.3035C18.9258 11.5711 20.9458 7.73315 23.438 7.73315C25.9303 7.73315 27.9506 11.5698 27.9506 16.3035"
+                        fill="white"></path>
+                      <path
+                        d="M32 16.3036C32 20.5427 31.2896 23.9813 30.4129 23.9813C29.5363 23.9813 28.8262 20.5437 28.8262 16.3036C28.8262 12.0636 29.5366 8.62598 30.4129 8.62598C31.2893 8.62598 32 12.0633 32 16.3036Z"
+                        fill="white"></path>
+                    </svg></div>
+                  <div class="cursor-pointer"><svg fill="none" height="32" viewBox="0 0 32 32" width="32"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_2574_11478)">
+                        <path
+                          d="M15.9993 29.3334C8.63535 29.3334 2.66602 23.3641 2.66602 16.0001C2.66602 8.63608 8.63535 2.66675 15.9993 2.66675C23.3633 2.66675 29.3327 8.63608 29.3327 16.0001C29.3327 23.3641 23.3633 29.3334 15.9993 29.3334ZM11.8527 17.5601L11.87 17.5507L13.03 21.3774C13.1793 21.7921 13.3847 21.8667 13.634 21.8321C13.8847 21.7987 14.0167 21.6641 14.1807 21.5067L15.7647 19.9761L19.1647 22.4934C19.786 22.8361 20.2327 22.6587 20.3873 21.9174L22.5967 11.4881C22.8407 10.5174 22.414 10.1281 21.6607 10.4374L8.68335 15.4507C7.79802 15.8054 7.80335 16.3014 8.52335 16.5214L11.8527 17.5614V17.5601Z"
+                          fill="white"></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2574_11478">
+                          <rect fill="white" height="32" width="32"></rect>
+                        </clipPath>
+                      </defs>
+                    </svg></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <div class="Toastify"></div>
+    </main>
+  </div>
+  <script id="__NEXT_DATA__" type="application/json">
+    {
+      "props": {
+        "pageProps": {}
+      },
+      "page": "/legal",
+      "query": {},
+      "buildId": "UuB9amsXpGYVwVvYJsjkA",
+      "nextExport": true,
+      "autoExport": true,
+      "isFallback": false,
+      "scriptLoader": []
+    }
+  </script>
+  <script>
+    var _scq = _scq || [];
+    var _scs = _scs || {};
+    _scs.teamId = 'pj2JvjjYP0tO2Xg3M9yUP0';
+
+    (function () {
+      var dc = document.createElement('script');
+      dc.type = 'text/javascript';
+      dc.async = true;
+      dc.src = '//cdn.sendx.io/prod/pj2JvjjYP0tO2Xg3M9yUP0.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(dc, s);
+    })();
+  </script>
+</body>
+
+</html>
