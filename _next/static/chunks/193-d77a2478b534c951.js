@@ -426,7 +426,7 @@
                                 }), (0, r.jsx)("li", {
                                     children: (0, r.jsx)(i(), {
                                         className: "cursor-pointer",
-                                        href: "https://www.crustexchange.io/Crustwpp.pdf",
+                                        href: "Crustwpp.pdf",
                                         target:"_blank",
                                         children: "Whitepaper"
                                     })
@@ -511,7 +511,7 @@
                                 children: ""
                             }), (0, r.jsx)(i(), {
                                 className: "cursor-pointer",
-                                href: "https://www.crustexchange.io/Crustwpp.pdf",
+                                href: "Crustwpp.pdf",
                                 target: "_blank",
                                 children: "Whitepaper"
                             }), (0, r.jsx)(i(), {
